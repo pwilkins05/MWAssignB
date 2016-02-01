@@ -1,6 +1,6 @@
 public class Board
     {
-    
+    //Simple Errors
         public const string userSymbol = "X";
         public const string computerSymbol = "O";
         public const string empty = "";
