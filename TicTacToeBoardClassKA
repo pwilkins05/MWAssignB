@@ -23,7 +23,7 @@ public class Board
 //Error Here
         public void Reset()
         {
-            for (int r = 0; r < 3; r++;)
+            for (int r = 0; r < 3; r++)
             {
                 for (int c = 0; c < 3; c++)
                 {
@@ -78,7 +78,7 @@ public class Board
 //error here
         public bool IsAnyColumnWinner()
         {
-            return IsColumnWinner(0) || IsColumnWinner(1) || IsColumnWinner(3);
+            return IsColumnWinner(0) || IsColumnWinner(1) || IsColumnWinner(2);
         }
 
         public bool IsDiagonal1Winner()
@@ -136,7 +136,7 @@ public class Board
 //Error Here, calling a method
         public bool IsTie()
         {
-            return (IsFull && !(IsWinner()));
+            return (IsFull() && !(IsWinner()));
         }
     }
 
