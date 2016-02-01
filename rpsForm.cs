@@ -51,14 +51,15 @@ namespace Program6_10
             switch (computerChoice)
             {
                 //if computer chooses ROCK, tie
-                //BUG HERE!!
-                case ROCKS:
+                //Fixed bug in the switch statement, an Added 's' would have caused it too 
+                //call a null value. e.g. ROCKS instead of the constant int ROCK
+                case ROCK:
                     rockLabel.BackColor = Color.PeachPuff;
                     computerPictureBox.Image = Properties.Resources.photorock;
                     break;
                 //if computer chooses PAPER, user loses
-                //BUG HERE!!
-                case PAPERS:
+                //Fixed
+                case PAPER:
                     paperLabel.BackColor = Color.PeachPuff;
                     computerPictureBox.Image = Properties.Resources.photopaper;
                     message1Label.Text = messageLose;
@@ -107,8 +108,8 @@ namespace Program6_10
             switch (computerChoice)
             {
                 //if computer chooses ROCK, user wins
-                //BUG HERE!!
-                case ROCKS:
+                //Fixed
+                case ROCK:
                     rockLabel.BackColor = Color.PeachPuff;
                     computerPictureBox.Image = Properties.Resources.photorock;
                     message1Label.Text = messageWin;
@@ -116,8 +117,8 @@ namespace Program6_10
                     winsUser += 1;
                     break;
                 //else if computer chooses PAPER, tie
-                //BUG HERE!!
-                case PAPERS:
+                //Fixed
+                case PAPER:
                     paperLabel.BackColor = Color.PeachPuff;
                     computerPictureBox.Image = Properties.Resources.photopaper;
                     break;
