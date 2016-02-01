@@ -13,6 +13,7 @@
 *
 *******************************/
 
+//Since I am not a C++ programmer, I am adding some comments - thankfully, we have Daryl, who is a gifted programmer - to make these changes! (TLM)
 // TODO: switch to using arrays for scores -- See below
 // TODO switch to using array for dice -- Done - DJ
 // TODO: add yahtzee bonus score -- Done - DJ
@@ -71,7 +72,7 @@ int main()
 	srand(time(0));
 
 
-
+//the loop syntax seems to be same as in C# (TLM)
 	for (int turn = 0; turn < NUM_CATEGORIES; turn++)
 	{
 		int round = 1;
@@ -103,7 +104,7 @@ int main()
 			fivesScore, sixesScore, threeOfAKind,
 			fourOfAKind, fullHouse, smallStraight,
 			largeStraight, yahtzee, chance);
-
+//the switch statement also appears to be the same as in C# - TLM
 		switch (scoreOption)
 		{
 		case ONES:
@@ -173,6 +174,7 @@ int sumOfDice(int d[])
 * with blank lines before and after the print-out.
 *
 *********************************************************/
+//I am guessing that "endl" is "endline," but I don't know what "cout" is (TLM)
 void printRoll(int n[]) /* Changed die to array - DJ */
 {
 	cout << endl;
