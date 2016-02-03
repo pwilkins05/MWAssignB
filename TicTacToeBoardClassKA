@@ -27,7 +27,8 @@ public class Board
             {
                 for (int c = 0; c < 3; c++)
                 {
-                    board[r, c] = "";
+                    board[r, c] = empty;  // I could not find any more errors, but const "empty" is declared and not used, and
+										  // it makes sense to use it here - DJ
                 }
             }
         }
